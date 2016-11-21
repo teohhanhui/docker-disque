@@ -1,0 +1,11 @@
+--- src/config.h	2016-01-02 23:23:53.000000000 +0800
++++ src/config.h	2016-11-21 21:26:31.753364553 +0800
+@@ -57,7 +57,7 @@
+ #endif
+ 
+ /* Test for backtrace() */
+-#if defined(__APPLE__) || defined(__linux__)
++#if defined(__APPLE__) || defined(__GLIBC__)
+ #define HAVE_BACKTRACE 1
+ #endif
+ 
